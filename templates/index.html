@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Numero secreto{% endblock title %}
+
+{% block content %}
+<form action="/result" method="post" >
+    <input type="text" name="num_user" placeholder="adivina el numero">
+    <br>
+    <button type="submit">Enviar numero</button>
+</form>
+{% endblock content %}
